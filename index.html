@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Guriya ❤️</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Loading -->
+    <div id="loading">
+        <h1>❤️ Preparing Your Surprise ❤️</h1>
+        <div class="loader"></div>
+    </div>
+
+    <!-- Background -->
+    <div class="stars"></div>
+    <div class="hearts"></div>
+
+    <!-- Login -->
+    <section id="login">
+
+        <h1>Happy Birthday</h1>
+        <h2>My Guriya ❤️</h2>
+
+        <p>Enter Your Secret Password</p>
+
+        <input
+            id="password"
+            type="password"
+            placeholder="Password">
+
+        <button onclick="checkPassword()">
+            Open Surprise 🎁
+        </button>
+
+        <p id="error"></p>
+
+    </section>
+
+    <!-- Main -->
+    <section id="main">
+
+        <!-- Music -->
+     <video id="music" loop style="display:none;">
+    <source src="c:\Users\Hp\OneDrive\Desktop\guriya\music.mp4" type="video/mp4">
+</video>
+
+        <!-- Hero -->
+        <div class="hero">
+
+            <h1>
+                Happy Birthday
+                <br>
+                My Guriya ❤️
+            </h1>
+
+            <p>14 July 2006</p>
+
+            <button id="play">
+                🎵 Play Music
+            </button>
+
+        </div>
+
+        <div class="scroll">
+            👇 Scroll Down 👇
+        </div>
+
+        <!-- Cake -->
+        <section class="cakeSection">
+
+            <h2>🎂 Make A Wish 🎂</h2>
+
+            <div class="cake">
+
+                <div class="top"></div>
+
+                <div class="cream"></div>
+
+                <div class="candle">
+                    <div id="flame"></div>
+                </div>
+
+            </div>
+
+            <button id="blowBtn">
+                🕯️ Blow Candle
+            </button>
+
+        </section>
+
+        <!-- Love Letter -->
+        <section class="letterSection">
+
+            <h1>💌 A Letter For My Guriya ❤️</h1>
+
+            <div class="letterBox">
+
+                <p id="typing"></p>
+
+            </div>
+
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallerySection">
+
+            <h1>📸 Beautiful Memories ❤️</h1>
+
+            <div class="slider">
+
+                <img
+                    id="slideImage"
+                    src="pic/6f7b8ded94eea815e55f909b680bf3f7.jpg"
+                    alt="My Guriya">
+
+            </div>
+
+        </section>
+
+                <!-- Gift Section -->
+        <section class="giftSection">
+
+            <h1>🎁 A Special Gift For You ❤️</h1>
+
+            <div id="giftBox" class="giftBox">
+                🎁
+            </div>
+
+            <p id="giftMessage"></p>
+
+        </section>
+
+        <!-- Dua Section -->
+        <section class="duaSection">
+
+            <h1>🤲 A Special Dua For My Guriya ❤️</h1>
+
+            <div class="duaCard">
+
+                <p>
+                    اللهم بارك لها في عمرها، وارزقها السعادة، والصحة، وراحة القلب،
+                    واجعل أيامها كلها خيراً وبركة، واحفظها لي دائماً.
+                </p>
+
+                <br>
+
+                <p>
+                    🤲 Ya Allah,
+                    Meri Guriya ki zindagi hamesha khushiyon se bhar de.
+                    Usay sehat, sukoon, lambi umr aur halal rizq ata farma.
+                    Uski har jaiz dua qubool farma.
+                    Hamare darmiyan mohabbat, izzat aur barkat hamesha qayam rakh.
+                    Humein duniya aur aakhirat dono mein ek saath khush rakh.
+
+                    <br><br>
+
+                    Ameen Ya Rabb-ul-Alameen ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Final Screen -->
+        <section class="finalSection">
+
+            <h1>🎉 Happy Birthday My Guriya ❤️</h1>
+
+            <h2>14 July 2006</h2>
+
+            <p>
+
+                Forever Yours ❤️
+
+                <br><br>
+
+                <strong>Afnan</strong>
+
+            </p>
+
+        </section>
+
+        <!-- Final Love Message -->
+        <section class="loveFinal">
+
+            <h1>❤️ Forever & Always ❤️</h1>
+
+            <p id="finalText">
+
+                Meri Pyari Guriya... ❤️
+
+                <br><br>
+
+                Aap meri zindagi ki sabse khoobsurat ne'mat hain.
+
+                Har din Allah Ta'ala ka shukar ada karta hoon
+                ke usne mujhe aap jaisa pyara insaan ata kiya.
+
+                Meri har dua mein sabse pehle aap hoti hain.
+
+                Main hamesha aapki izzat karunga,
+                aapka saath dunga,
+                aur har mushkil mein aapke saath khara rahunga.
+
+                ❤️ Happy Birthday Meri Guriya ❤️
+
+                Allah Ta'ala hamesha aapko khush rakhe.
+
+                Ameen 🤲
+
+            </p>
+
+            <button id="finalBtn">
+
+                🎉 Final Surprise
+
+            </button>
+
+        </section>
+
+        <footer>
+
+            Made With ❤️ By Afnan
+
+        </footer>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
